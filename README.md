@@ -7,6 +7,10 @@ The AHP is a structured technique for organizing and analyzing complex decisions
 
 #### Start:
 The program is written on Python 3. It may be run from console or any Python 3+ IDE.
-
 WARNING! Program use Numpy. Before start you need to install Numpy on your PC.
 
+
+#### Screenshot:
+Weights in the screenshot was taken from lector's sample.
+
+![Screenshot](https://i.imgur.com/U8TawCu.png)
