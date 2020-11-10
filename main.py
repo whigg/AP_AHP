@@ -12,7 +12,7 @@ def ahp():
             continue
         break
 
-    M = np.ones((n, n))
+    M = np.eye(n)     # creating (n, n) matrix filled with ones on main diagonal
 
     for i in range(M.shape[0]):
         for j in range(M.shape[1]):
@@ -28,16 +28,16 @@ def ahp():
                 M[i, j] = wij
                 M[j, i] = 1 / wij
 
-    rowsum_M = M.sum(axis=1)
-    sum = M.sum()
-    weights = rowsum_M / sum
+    rowsum_M = M.sum(axis=1)            # sum for each row
+    sum = M.sum()                       # full sum
+    weights = rowsum_M / sum            # normalization
     weights = np.around(weights, decimals=2)
     print('AHP weights: ', weights)
 
 
 
 def main():
-    ahp()
+    ahp()  
 
 if __name__ == '__main__':
     main()
